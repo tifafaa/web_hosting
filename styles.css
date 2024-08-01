@@ -1,0 +1,152 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Basic styling for the body */
+body {
+    background-color: #e9ecef;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 70px; /* Space for fixed header */
+}
+
+/* Header styling */
+header {
+    background-color: #74b5ff;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Profile section styling */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    max-width: 800px;
+    margin: 90px auto 20px auto; /* Added top margin to avoid overlap with fixed header */
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center align text */
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100px; /* Smaller size */
+    height: 100px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image fits within the circle */
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-info h2 {
+    color: #74b5ff;
+    margin-bottom: 15px;
+}
+
+/* Ensure sections are properly spaced and not overlapped by fixed header */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center align text */
+    position: relative; /* Ensure correct positioning context */
+}
+
+#profile {
+    padding-top: 90px; /* Space to account for fixed header */
+}
+
+#about {
+    padding-top: 90px; /* Space to account for fixed header */
+}
+
+#skills {
+    padding-top: 90px; /* Space to account for fixed header */
+}
+
+#contact {
+    padding-top: 90px; /* Space to account for fixed header */
+}
+
+section h2 {
+    color: #74b5ff;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+section p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+    text-align: left; /* Align list items to the left */
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #74b5ff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
